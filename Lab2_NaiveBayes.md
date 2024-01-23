@@ -73,9 +73,48 @@ For the following problem, please choose a group facilitator/representative who 
 
    <ol type="a">
       <li>Is Alice’s comment deleted by your automoderator?</li>
+       **Answer:**
+        
+        P(-) = 2/3
+        P(+) = 1/3
+        
+        |V| = 8
+        We get rid of "go", because it is not in the training set.
+        
+        p("bears"|-) = 3/(7+8)=3/15
+        p("bears"|+) = 1/(3+8)=1/11
+        
+        P(-|"go bears") = P(-)P("go bears"|-) = p(-)p("bears"|-)=2/3*3/15=2/15=0.13333
+
+        P(+|"go bears") = P(+)P("go bears"|+) = p(+)p("bears"|+)=1/3*1/11=1/33=0.03030
+
+        It is getting deleted.
+
       <li>Is Bob’s comment deleted by your automoderator?</li>
+        **Answer:**
+        
+        We get rid of "go", because it is not in the training set.
+        
+        p("trees"|-) = 1/(7+8)=1/15
+        p("trees"|+) = 2/(3+8)=2/11
+
+        P(-|"go trees") = P(-)P("go trees"|-) = p(-)p("trees"|-)=2/3*1/15=2/15=0.04444
+
+        P(+|"go trees") = P(+)P("go trees"|+) = p(+)p("trees"|+)=1/3*2/11=2/33=0.06060
+
+        It is not getting deleted.
+
+      
       <li>Which two groups of people is your automoderator treating differently, even though membership in these groups doesn’t have a clear connection to comment toxicity?</li>
+        **Answer:**
+
+        Cal students, since the word bears is related to negative sentences.
+      
       <li>What kind of harm from the lecture is experienced by the group whose comments are getting deleted?</li>
+      **Answer:**
+
+      They are getting sensored.
+      
       <li>Having realized the harm from part (d) that your automoderator is causing, you change it so that negative comments are not deleted. Instead, they are just highlighted in red and marked “negative”. Now, what kind of harm from lecture is the aforementioned group experiencing?</li>
       <li>You are now trying to improve the automoderator to reduce this type of harm from occurring in the future. As a group, describe 3 distinct problems in the automoderator that led to this harm.</li>
       <li>As a group, describe a plan for how you might fix one of the problems you described in part f. If you don’t have any ideas, explain why this seems hard. For whatever question you answer, be prepared to share.</li>
