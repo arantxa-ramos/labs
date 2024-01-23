@@ -23,6 +23,7 @@ Answer the questions below given the sets above.
 **Answer:**
 P(-) = 2/3
 P(+) = 1/3
+
 |V| = 9
 We get rid of adore, because it is not in the training set.
 
@@ -35,7 +36,9 @@ p("cat"|+) = 1/(3+9)=1/12
 2. Then compute whether the sentence in the test set is of class positive or negative (you may need a computer for this final computation).
 
 **Answer:**
+
 P(-|"adore my cat") = P(-)P("adore my cat"|-) = p(-)p("adore"|-)p("my"|-)p("cat"|-)=2/3*(2/17*3/17)=4/289=0.01384
+
 P(+|"adore my cat") = P(+)P("adore my cat"|+) = p(+)p("adore"|+)p("my"|+)p("cat"|+)=1/3*(2/12*1/12)=1/216=0.00463
 
 3. Do you think that the predicted class is the correct sentiment of this sentence? Explain, in your own words, what about the Naïve Bayes classifier led it to the correct or incorrect answer. What assumptions made by Naïve Bayes led to this result? Identify a specific assumption and be prepared to justify.
