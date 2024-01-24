@@ -73,7 +73,7 @@ For the following problem, please choose a group facilitator/representative who 
 
    <ol type="a">
       <li>Is Alice’s comment deleted by your automoderator?</li>
-   P(-) = 2/3
+       P(-) = 2/3
     P(+) = 1/3
     
     |V| = 8
@@ -87,7 +87,7 @@ For the following problem, please choose a group facilitator/representative who 
     P(+|"go bears") = P(+)P("go bears"|+) = p(+)p("bears"|+)=1/3*1/11=1/33=0.03030
 
     It is getting deleted.
-
+    <ol type="a">
       <li>Is Bob’s comment deleted by your automoderator?</li>
         **Answer:**
         
