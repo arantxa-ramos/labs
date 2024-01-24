@@ -21,41 +21,43 @@ Answer the questions below given the sets above.
 1. Compute the prior for the two classes + and -, and the likelihood for each word that appears in the test sentence given either class.
 
 **Answer:**
-P(-) = 2/3
-P(+) = 1/3
 
-|V| = 9
-We get rid of adore, because it is not in the training set.
-
-p("my"|-) = 2/(8+9)=2/17
-p("my"|+) = 2/(3+9)=2/12
-
-p("cat"|-) = 3/(8+9)=3/17
-p("cat"|+) = 1/(3+9)=1/12
+    P(-) = 2/3
+    P(+) = 1/3
+    
+    |V| = 9
+    We get rid of adore, because it is not in the training set.
+    
+    p("my"|-) = 2/(8+9)=2/17
+    p("my"|+) = 2/(3+9)=2/12
+    
+    p("cat"|-) = 3/(8+9)=3/17
+    p("cat"|+) = 1/(3+9)=1/12
 
 2. Then compute whether the sentence in the test set is of class positive or negative (you may need a computer for this final computation).
 
 **Answer:**
 
-P(-|"adore my cat") = P(-)P("adore my cat"|-) = p(-)p("adore"|-)p("my"|-)p("cat"|-)=2/3*(2/17*3/17)=4/289=0.01384
-
-P(+|"adore my cat") = P(+)P("adore my cat"|+) = p(+)p("adore"|+)p("my"|+)p("cat"|+)=1/3*(2/12*1/12)=1/216=0.00463
+    P(-|"adore my cat") = P(-)P("adore my cat"|-) = p(-)p("adore"|-)p("my"|-)p("cat"|-)=2/3*(2/17*3/17)=4/289=0.01384
+    
+    P(+|"adore my cat") = P(+)P("adore my cat"|+) = p(+)p("adore"|+)p("my"|+)p("cat"|+)=1/3*(2/12*1/12)=1/216=0.00463
 
 3. Do you think that the predicted class is the correct sentiment of this sentence? Explain, in your own words, what about the Naïve Bayes classifier led it to the correct or incorrect answer. What assumptions made by Naïve Bayes led to this result? Identify a specific assumption and be prepared to justify.
 
 **Answer:**
-I don't think it is correct. The training set is too small, so there is not an example of the word adore (that has a very strong positive connotation). Also, all the negative sentences in the training set are related to cat, which makes it seem as if it was a negative word. 
+
+    I don't think it is correct. The training set is too small, so there is not an example of the word adore (that has a very strong positive connotation). Also, all the negative sentences in the training set are related to cat, which makes it seem as if it was a negative word. 
 
 4. Why do you add |V| to the denominator of add-1 smoothing, instead of just counting the words in one class?
 
 **Answer:**
-We add smoothig to having 0 probabilities that would cancel the other probabilities.
+    We add smoothig to having 0 probabilities that would cancel the other probabilities.
 
 5. Suppose "cat" was a demographic attribute like "woman" or "engineer" or "Asian”. What harms from the lecture could this result in, and why?
 
 **Answer:**
-The results we obtain are very dependant of the training set, so it is important to avoid this attributes to be related with negative.
-We will now go back to the whole class and discuss group answers for Part 1 in a plenary session.
+    The results we obtain are very dependant of the training set, so it is important to avoid this attributes to be related with negative.
+    We will now go back to the whole class and discuss group answers for Part 1 in a plenary session.
 
 ## Part 2: Naive Bayes Toxicity Classification
 
