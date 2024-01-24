@@ -73,20 +73,22 @@ For the following problem, please choose a group facilitator/representative who 
 
    <ol type="a">
       <li>Is Alice’s comment deleted by your automoderator?</li>
-       P(-) = 2/3
-    P(+) = 1/3
-    
-    |V| = 8
-    We get rid of "go", because it is not in the training set.
-    
-    p("bears"|-) = 3/(7+8)=3/15
-    p("bears"|+) = 1/(3+8)=1/11
-    
-    P(-|"go bears") = P(-)P("go bears"|-) = p(-)p("bears"|-)=2/3*3/15=2/15=0.13333
-
-    P(+|"go bears") = P(+)P("go bears"|+) = p(+)p("bears"|+)=1/3*1/11=1/33=0.03030
-
-    It is getting deleted.
+       **Answer**
+            P(-) = 2/3
+            P(+) = 1/3
+            
+            |V| = 8
+            We get rid of "go", because it is not in the training set.
+            
+            p("bears"|-) = 3/(7+8)=3/15
+            p("bears"|+) = 1/(3+8)=1/11
+            
+            P(-|"go bears") = P(-)P("go bears"|-) = p(-)p("bears"|-)=2/3*3/15=2/15=0.13333
+        
+            P(+|"go bears") = P(+)P("go bears"|+) = p(+)p("bears"|+)=1/3*1/11=1/33=0.03030
+        
+            It is getting deleted.
+    </ol>
     <ol type="a">
       <li>Is Bob’s comment deleted by your automoderator?</li>
         **Answer:**
