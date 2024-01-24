@@ -73,7 +73,7 @@ For the following problem, please choose a group facilitator/representative who 
 
    The week after training, the Big Game (between Stanford and Cal) happens. Users on /r/bayarea are excited. Alice, a Cal student, wants to support her team and comments `“Go bears!”`. Bob, a Stanford student, wants to support his team and comments `“Go trees!”`. Answer the following questions:
 
-   a. Is Alice’s comment deleted by your automoderator?</li>
+   a. Is Alice’s comment deleted by your automoderator?
        **Answer**
         P(-) = 2/3
         P(+) = 1/3
@@ -90,7 +90,7 @@ For the following problem, please choose a group facilitator/representative who 
     
         It is getting deleted.
         
-    b. Is Bob’s comment deleted by your automoderator?</li>
+    b. Is Bob’s comment deleted by your automoderator?
         **Answer:**
         
         We get rid of "go", because it is not in the training set.
@@ -105,7 +105,7 @@ For the following problem, please choose a group facilitator/representative who 
         It is not getting deleted.
 
       
-      c. Which two groups of people is your automoderator treating differently, even though membership in these groups doesn’t have a clear connection to comment toxicity?</li>
+      c. Which two groups of people is your automoderator treating differently, even though membership in these groups doesn’t have a clear connection to comment toxicity?
         **Answer:**
 
         Cal students, since the word bears is related to negative sentences.
